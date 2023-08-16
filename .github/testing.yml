@@ -1,0 +1,11 @@
+name: Test and Deploy
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Linting
+        run: npm run lint
+      - name: Testing
+        run: npm run test
+      - name: Building
+        run: npm run build
